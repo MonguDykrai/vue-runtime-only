@@ -80,16 +80,23 @@
         </a>
       </li>
     </ul>
+    <example-component></example-component>
   </div>
 </template>
 
 <script>
+import ExampleComponent from './ExampleComponent.vue'
+
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+
+  components: {
+    ExampleComponent
   }
 }
 </script>
